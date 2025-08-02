@@ -31,6 +31,7 @@ const SuggestHealthierDrinkOutputSchema = z.object({
   recipeSuggestion: z
     .string()
     .optional()
+    .nullable()
     .describe('A recipe suggestion from the recipe book, if available.'),
 });
 export type SuggestHealthierDrinkOutput = z.infer<
@@ -92,4 +93,3 @@ const suggestHealthierDrinkFlow = ai.defineFlow(
     return output!;
   }
 );
-
