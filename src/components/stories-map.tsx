@@ -16,6 +16,7 @@ type Story = {
     lat: number;
     lng: number;
   };
+  fallback: string;
 };
 
 type StoriesMapProps = {
