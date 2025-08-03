@@ -18,11 +18,12 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/hooks/use-toast"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Mail } from "lucide-react"
+import { Mail, Phone } from "lucide-react"
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
   email: z.string().email("Please enter a valid email address."),
+  phone: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters."),
 })
 
@@ -32,6 +33,7 @@ export default function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
     },
   })
@@ -85,6 +87,19 @@ export default function ContactForm() {
                   )}
                 />
               </div>
+               <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Phone Number (Optional)</FormLabel>
+                      <FormControl>
+                        <Input placeholder="e.g., (123) 456-7890" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
               <FormField
                 control={form.control}
                 name="message"
