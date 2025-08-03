@@ -41,7 +41,7 @@ const testimonials = [
   {
     name: "Jessica L.",
     major: "Biology Student",
-    image: "https://placehold.co/100x100.png",
+    image: "https://storage.googleapis.com/stabl-media/team-images/jessica.png",
     fallback: "JL",
     testimonial: "I used to run on sugary energy drinks. The SHIFT recipe book showed me how to make amazing iced teas that give me a clean energy boost. It's been a game-changer for my study sessions!",
     swap: "Energy Drinks → Green Tea",
@@ -49,7 +49,7 @@ const testimonials = [
   {
     name: "Mike P.",
     major: "Engineering Student",
-    image: "https://placehold.co/100x100.png",
+    image: "https://storage.googleapis.com/stabl-media/team-images/mike.png",
     fallback: "MP",
     testimonial: "The AI tool is so cool! I told it I liked sour, fruity drinks, and it suggested a sparkling water with lime and mint. I feel so much more hydrated and focused in class.",
     swap: "Soda → Sparkling Water",
@@ -57,7 +57,7 @@ const testimonials = [
   {
     name: "Chloe T.",
     major: "Art History Student",
-    image: "https://placehold.co/100x100.png",
+    image: "https://storage.googleapis.com/stabl-media/team-images/chloe.png",
     fallback: "CT",
     testimonial: "I love the community events. I met other students who are also into health and wellness, and even discovered a local kombucha vendor I'd never heard of. It's so much more than just not drinking soda.",
     swap: "Sugary Lattes → Kombucha",
@@ -83,9 +83,9 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="https://placehold.co/600x600.png"
+              src="https://storage.googleapis.com/stabl-media/team-images/students-laughing-drinks.png"
               data-ai-hint="students laughing drinks"
-              alt="Students enjoying healthy drinks"
+              alt="A diverse group of smiling students are casually gathered outdoors, holding glasses of colorful, healthy-looking beverages like fruit-infused water and smoothies. The atmosphere is bright, sunny, and positive, conveying a sense of community and well-being."
               width={600}
               height={600}
               className="mx-auto rounded-xl object-cover"

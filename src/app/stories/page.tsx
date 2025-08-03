@@ -33,7 +33,7 @@ const stories = [
   {
     name: "Alex R.",
     location: "UCLA, Los Angeles",
-    image: "https://placehold.co/100x100.png",
+    image: "https://storage.googleapis.com/stabl-media/team-images/alex.png",
     fallback: "AR",
     story: "Switching from three sodas a day to flavored sparkling water was tough at first, but now I have so much more energy and no more afternoon crashes. It's amazing how much better I feel.",
     swap: "Soda → Sparkling Water",
@@ -42,7 +42,7 @@ const stories = [
   {
     name: "Maria G.",
     location: "NYU, New York",
-    image: "https://placehold.co/100x100.png",
+    image: "https://storage.googleapis.com/stabl-media/team-images/maria.png",
     fallback: "MG",
     story: "I didn't realize how much sugar was in my daily 'fancy' coffee. I started making my own cold brew at home and just adding a splash of oat milk. I'm saving money and feel less jittery.",
     swap: "Sugary Coffee → Cold Brew",
@@ -51,9 +51,9 @@ const stories = [
   {
     name: "Ben C.",
     location: "University of Texas, Austin",
-    image: "https://placehold.co/100x100.png",
+    image: "https://storage.googleapis.com/stabl-media/team-images/ben.png",
     fallback: "BC",
-    story: "As an athlete, hydration is key. I used to think I needed sports drinks, but they're loaded with sugar. Now I stick to water with a bit of lemon and salt. My performance has actually improved.",
+    story: "As an athlete, hydration is key. I used to think I needed a sports drinks, but they're loaded with sugar. Now I stick to water with a bit of lemon and salt. My performance has actually improved.",
     swap: "Sports Drinks → Lemon Water",
     position: { lat: 30.2849, lng: -97.7341 },
   },
