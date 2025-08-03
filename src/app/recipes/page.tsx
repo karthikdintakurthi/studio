@@ -60,8 +60,8 @@ const recipes = [
   {
     title: "Creamy Matcha Power-Up",
     description: "A focused energy boost without the jitters of coffee.",
-    image: "https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fcreamy-matcha-power-up.png?alt=media&token=b3a2e5b3-5b3a-4a5e-8b1e-6e8a1a3e5e2b",
-    aiHint: "matcha latte",
+    image: "https://storage.googleapis.com/stabl-media/SHIFT/SHIFT-matcha-and-blue-pea-latte-1.png",
+    aiHint: "matcha blue latte",
     tags: ["Energy", "Focus"],
   },
   {
