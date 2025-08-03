@@ -60,6 +60,9 @@ const recipeBookTool = ai.defineTool({
     // TODO: Implement the logic to retrieve a recipe from the recipe book.
     // This is a placeholder; replace it with actual data retrieval.
     console.log('Tool was called with', input);
+    if (input.flavors.toLowerCase().includes('fruity') && input.sugarContent === 'low') {
+        return `Sparkling Berry Splash: \nIngredients: 1/2 cup mixed berries, 1 can of sparkling water, 1 tsp maple syrup (optional). \nInstructions: Muddle berries, top with sparkling water, and stir.`
+    }
     return undefined; /* Example:  `Ingredients: ... Instructions: ...` */
   },
 });
@@ -69,16 +72,21 @@ const prompt = ai.definePrompt({
   input: {schema: SuggestHealthierDrinkInputSchema},
   output: {schema: SuggestHealthierDrinkOutputSchema},
   tools: [recipeBookTool],
-  prompt: `You are a helpful AI assistant that suggests healthier alternatives to drinks.
+  prompt: `You are a wellness-focused barista AI. Your goal is to suggest a healthier and delicious alternative to the user's favorite drink.
 
-  The user's favorite drink is: {{{favoriteDrink}}}
-  They prefer flavors like: {{{flavors}}}
-  They prefer a sugar content that is: {{{sugarContent}}}
+  Follow these steps:
+  1.  Analyze the user's preferences:
+      -   Favorite Drink: {{{favoriteDrink}}}
+      -   Preferred Flavors: {{{flavors}}}
+      -   Preferred Sugar Content: {{{sugarContent}}}
 
-  Suggest a healthier alternative drink that satisfies these preferences. 
+  2.  Based on their preferences, come up with a single, specific, and appealing healthier drink suggestion. This is mandatory. Set this value in the 'suggestedDrink' output field.
 
-  If the user's question asks about a recipe, include a recipe suggestion if available using the getRecipeFromRecipeBook tool.
-  Do not force the use of tools, but guide the user towards them when appropriate.
+  3.  Next, check if a relevant recipe is available using the 'getRecipeFromRecipeBook' tool based on the user's flavor and sugar preferences.
+      -   If a recipe is found, place its full text in the 'recipeSuggestion' output field.
+      -   If no recipe is found, leave the 'recipeSuggestion' field empty.
+
+  Your response must be friendly and encouraging.
   `,
 });
 
