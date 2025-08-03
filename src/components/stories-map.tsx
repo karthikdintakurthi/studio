@@ -33,7 +33,7 @@ export const StoriesMap: FC<StoriesMapProps> = ({ stories }) => {
         <div className="max-w-md rounded-lg border border-destructive bg-destructive/10 p-6 text-destructive">
           <h3 className="font-bold">Configuration Error</h3>
           <p className="mt-2 text-sm">
-            The Google Maps API Key is missing. Please make sure the <code className="font-mono text-sm">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> is set in your <code className="font-mono text-sm">.env</code> file.
+            The Google Maps API Key is missing. Please make sure the <code className="font-mono text-sm">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> is set in your <code className="font-mono text-sm">.env.local</code> file in the root of your project.
           </p>
         </div>
       </div>
