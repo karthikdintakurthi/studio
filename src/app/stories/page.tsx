@@ -33,7 +33,7 @@ const stories = [
   {
     name: "Alex R.",
     location: "UCLA, Los Angeles",
-    image: "https://storage.googleapis.com/stabl-media/team-images/alex.png",
+    image: "https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Falex.png?alt=media&token=c15c8a32-8511-4402-a16a-35ed820356c4",
     fallback: "AR",
     story: "Switching from three sodas a day to flavored sparkling water was tough at first, but now I have so much more energy and no more afternoon crashes. It's amazing how much better I feel.",
     swap: "Soda → Sparkling Water",
@@ -42,7 +42,7 @@ const stories = [
   {
     name: "Maria G.",
     location: "NYU, New York",
-    image: "https://storage.googleapis.com/stabl-media/team-images/maria.png",
+    image: "https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fmaria.png?alt=media&token=e0e7a2b2-5b3a-4a5e-8b1e-6e8a1a3e5e2b",
     fallback: "MG",
     story: "I didn't realize how much sugar was in my daily 'fancy' coffee. I started making my own cold brew at home and just adding a splash of oat milk. I'm saving money and feel less jittery.",
     swap: "Sugary Coffee → Cold Brew",
@@ -51,7 +51,7 @@ const stories = [
   {
     name: "Ben C.",
     location: "University of Texas, Austin",
-    image: "https://storage.googleapis.com/stabl-media/team-images/ben.png",
+    image: "https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fben.png?alt=media&token=a8e5b3a2-5b3a-4a5e-8b1e-6e8a1a3e5e2b",
     fallback: "BC",
     story: "As an athlete, hydration is key. I used to think I needed a sports drinks, but they're loaded with sugar. Now I stick to water with a bit of lemon and salt. My performance has actually improved.",
     swap: "Sports Drinks → Lemon Water",

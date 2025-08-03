@@ -83,7 +83,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="https://storage.googleapis.com/stabl-media/team-images/students-laughing-drinks.png"
+              src="https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fstudents-laughing-drinks.png?alt=media&token=c15c8a32-8511-4402-a16a-35ed820356c4"
               data-ai-hint="students laughing drinks"
               alt="A diverse group of smiling students are casually gathered outdoors, holding glasses of colorful, healthy-looking beverages like fruit-infused water and smoothies. The atmosphere is bright, sunny, and positive, conveying a sense of community and well-being."
               width={600}
