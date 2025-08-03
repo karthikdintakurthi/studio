@@ -15,6 +15,7 @@ const navLinks = [
   { href: "/stories", label: "Stories" },
   { href: "/recipes", label: "Recipes" },
   { href: "/events", label: "Events" },
+  { href: "/contact", label: "Contact" },
 ]
 
 export function AppHeader() {

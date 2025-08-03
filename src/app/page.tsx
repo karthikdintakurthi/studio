@@ -13,7 +13,6 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Map, Sparkles, Users } from 'lucide-react';
 import AIDrinkSuggester from '@/components/ai-drink-suggester';
-import ContactForm from '@/components/contact-form';
 
 const values = [
   {
@@ -171,12 +170,6 @@ export default function Home() {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-        </div>
-      </section>
-
-      <section id="contact" className="bg-primary/5">
-        <div className="container mx-auto px-4 md:px-6">
-          <ContactForm />
         </div>
       </section>
     </div>
