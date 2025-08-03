@@ -12,7 +12,7 @@ const teamMembers = [
     bio: "Prananya started SHIFT after noticing how many of her peers relied on sugary drinks to get through the day. She's passionate about holistic wellness and community building.",
   },
   {
-    name: "Jeevel kaur",
+    name: "Jeevel Kaur",
     role: "Head of Events",
     image: "https://storage.googleapis.com/stabl-media/team-images/david.png",
     fallback: "JK",
