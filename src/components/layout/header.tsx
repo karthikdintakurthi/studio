@@ -12,6 +12,7 @@ import { Logo } from "@/components/logo"
 import React from "react"
 
 const navLinks = [
+  { href: "/about", label: "About" },
   { href: "/stories", label: "Stories" },
   { href: "/recipes", label: "Recipes" },
   { href: "/events", label: "Events" },

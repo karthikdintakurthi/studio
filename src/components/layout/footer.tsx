@@ -13,6 +13,9 @@ export function AppFooter() {
         <div className="flex flex-col items-center md:items-start gap-2">
             <h4 className="font-headline text-lg font-semibold">Quick Links</h4>
             <nav className="flex flex-col items-center md:items-start gap-1">
+              <Link href="/about" className="text-sm text-foreground/80 hover:underline underline-offset-4">
+                About
+              </Link>
               <Link href="/stories" className="text-sm text-foreground/80 hover:underline underline-offset-4">
                 Stories
               </Link>
