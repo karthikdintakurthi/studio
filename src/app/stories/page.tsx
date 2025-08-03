@@ -87,7 +87,7 @@ export default function StoriesPage() {
       <section>
         <div className="container mx-auto px-4 md:px-6">
           <Card>
-            <CardContent className="p-4">
+            <CardContent className="p-0">
               <div className="aspect-video w-full rounded-lg bg-muted overflow-hidden">
                  <StoriesMap stories={stories} />
               </div>
