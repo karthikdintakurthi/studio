@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'storage.googleapis.com',
         port: '',
-        pathname: '/stabl-media/**',
+        pathname: '/**',
       },
       {
         protocol: 'https',

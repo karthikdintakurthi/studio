@@ -81,14 +81,14 @@ export default function Home() {
               <Link href="#swap-tool">Find Your Healthy Swap <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
           </div>
-          <div>
+          <div className="flex items-center justify-center">
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fstudents-laughing-drinks.png?alt=media&token=c15c8a32-8511-4402-a16a-35ed820356c4"
+              src="https://storage.googleapis.com/stabl-media/SHIFT/shift-hero.png"
               data-ai-hint="students laughing drinks"
               alt="A diverse group of smiling students are casually gathered outdoors, holding glasses of colorful, healthy-looking beverages like fruit-infused water and smoothies. The atmosphere is bright, sunny, and positive, conveying a sense of community and well-being."
               width={600}
               height={600}
-              className="mx-auto rounded-xl object-cover"
+              className="aspect-square w-full max-w-md rounded-xl object-cover"
             />
           </div>
         </div>
