@@ -29,8 +29,13 @@ export const StoriesMap: FC<StoriesMapProps> = ({ stories }) => {
 
   if (!apiKey) {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-muted p-4 text-center text-destructive">
-        Google Maps API Key is missing. Please add it to your .env file to display the map.
+      <div className="flex h-full w-full items-center justify-center bg-muted p-4 text-center">
+        <div className="max-w-md rounded-lg border border-destructive bg-destructive/10 p-6 text-destructive">
+          <h3 className="font-bold">Configuration Error</h3>
+          <p className="mt-2 text-sm">
+            The Google Maps API Key is missing. Please make sure the <code className="font-mono text-sm">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> is set in your <code className="font-mono text-sm">.env</code> file.
+          </p>
+        </div>
       </div>
     );
   }
