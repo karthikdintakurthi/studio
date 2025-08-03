@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, Leaf } from "lucide-react"
+import { Menu } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { useIsMobile } from "@/hooks/use-mobile"
@@ -24,7 +24,7 @@ export function AppHeader() {
   if (isMobile) {
     return (
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-20 items-center justify-between">
           <Logo />
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -35,7 +35,9 @@ export function AppHeader() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex h-full flex-col p-6">
-                <Logo />
+                <div className="mb-4">
+                  <Logo />
+                </div>
                 <nav className="mt-8 flex flex-col gap-4">
                   {navLinks.map((link) => (
                     <NavLink key={link.href} href={link.href} onClick={() => setIsOpen(false)}>
@@ -53,7 +55,7 @@ export function AppHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-20 items-center">
         <Logo />
         <nav className="ml-10 flex items-center space-x-6">
           {navLinks.map((link) => (
