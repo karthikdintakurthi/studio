@@ -83,9 +83,9 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="https://storage.googleapis.com/stabl-media/SHIFT/shift-hero.png"
-              data-ai-hint="students laughing drinks"
-              alt="A diverse group of smiling students are casually gathered outdoors, holding glasses of colorful, healthy-looking beverages like fruit-infused water and smoothies. The atmosphere is bright, sunny, and positive, conveying a sense of community and well-being."
+              src="https://storage.googleapis.com/stabl-media/SHIFT/shift-impact-hero.png"
+              data-ai-hint="students healthy drinks"
+              alt="Students creating impact with the SHIFT initiative by choosing healthy drinks over sugary beverages."
               width={600}
               height={600}
               className="aspect-square w-full max-w-md rounded-xl object-cover"
