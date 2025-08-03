@@ -9,14 +9,14 @@ const teamMembers = [
     role: "Founder & President",
     image: "https://storage.googleapis.com/stabl-media/team-images/sarah.png",
     fallback: "PC",
-    bio: "Sarah started SHIFT after noticing how many of her peers relied on sugary drinks to get through the day. She's passionate about holistic wellness and community building.",
+    bio: "Prananya started SHIFT after noticing how many of her peers relied on sugary drinks to get through the day. She's passionate about holistic wellness and community building.",
   },
   {
     name: "Jeevel kaur",
     role: "Head of Events",
     image: "https://storage.googleapis.com/stabl-media/team-images/david.png",
     fallback: "JK",
-    bio: "David organizes all of our workshops and community fairs. He believes that learning about health should be fun, interactive, and accessible to everyone.",
+    bio: "Jeevel organizes all of our workshops and community fairs. She believes that learning about health should be fun, interactive, and accessible to everyone.",
   },
   {
     name: "Emily Rodriguez",
