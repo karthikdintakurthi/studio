@@ -60,7 +60,7 @@ const recipes = [
   {
     title: "Creamy Matcha Power-Up",
     description: "A focused energy boost without the jitters of coffee.",
-    image: "https://storage.googleapis.com/stabl-media/SHIFT/SHIFT-matcha-and-blue-pea-latte-1.png",
+    image: "https://www.ohhowcivilized.com/wp-content/uploads/matcha-milkshake-6.jpg",
     aiHint: "matcha blue latte",
     tags: ["Energy", "Focus"],
   },

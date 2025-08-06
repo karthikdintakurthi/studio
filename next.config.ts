@@ -51,6 +51,12 @@ const nextConfig: NextConfig = {
         hostname: 'immune-schein.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.ohhowcivilized.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
