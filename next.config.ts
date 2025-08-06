@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.stackandsprout.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'realandvibrant.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

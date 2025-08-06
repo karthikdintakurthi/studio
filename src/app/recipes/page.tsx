@@ -39,7 +39,7 @@ const recipes = [
   {
     title: "Golden Turmeric Latte",
     description: "A warm and spicy anti-inflammatory latte to soothe and comfort.",
-    image: "https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fgolden-turmeric-latte.png?alt=media&token=e0e7a2b2-5b3a-4a5e-8b1e-6e8a1a3e5e2b",
+    image: "https://realandvibrant.com/wp-content/uploads/2019/05/Turmeric-Latte-Golden-Milk-Recipe-1.jpg",
     aiHint: "turmeric latte",
     tags: ["Caffeine-Free", "Comforting"],
   },
