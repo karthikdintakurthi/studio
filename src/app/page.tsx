@@ -83,7 +83,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="https://storage.googleapis.com/stabl-media/SHIFT/shift-impact-hero.png"
+              src="https://firebasestorage.googleapis.com/v0/b/shift-qj44z.firebasestorage.app/o/banner.jpg?alt=media&token=f08481d8-9571-4677-9a4a-2c565e7d37a3"
               data-ai-hint="students healthy drinks"
               alt="Students creating impact with the SHIFT initiative by choosing healthy drinks over sugary beverages."
               width={600}
