@@ -32,7 +32,7 @@ const recipes = [
   {
     title: "Minty Cucumber Cooler",
     description: "A refreshing and hydrating drink, perfect for a hot day or after a workout.",
-    image: "https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fminty-cucumber-cooler.png?alt=media&token=c4a9a4b3-9a3b-4c5b-8e3a-5e2b8f8a1a3e",
+    image: "https://storage.googleapis.com/stabl-media/team-images/minty-cucumber-cooler.png",
     aiHint: "cucumber mint drink",
     tags: ["Low Sugar", "Hydrating", "Vegan"],
   },
