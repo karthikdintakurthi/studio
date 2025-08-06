@@ -46,7 +46,7 @@ const recipes = [
   {
     title: "Sparkling Berry Splash",
     description: "A bubbly and antioxidant-rich alternative to soda.",
-    image: "https://www.rachelcooks.com/wp-content/uploads/2020/06/Sparkling-Berry-Pink-Lemonade-118-735x1103.jpg",
+    image: "https://www.chelseasmessyapron.com/wp-content/uploads/2015/08/Lime-Berry-Spritzer3.jpg",
     aiHint: "berry soda water",
     tags: ["Bubbly", "Low Sugar", "Fruity"],
   },

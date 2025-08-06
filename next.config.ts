@@ -63,7 +63,13 @@ const nextConfig: NextConfig = {
         hostname: 'rachelcooksthai.com',
         port: '',
         pathname: '/**',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.chelseasmessyapron.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   async headers() {
