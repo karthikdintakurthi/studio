@@ -52,8 +52,8 @@ export default function AboutPage() {
               src="https://healthy.ucdavis.edu/sites/g/files/dgvnsk7626/files/styles/sf_landscape_16x9/public/media/images/spa%20water2.png?h=ab949e0b&itok=AsMOYGsa"
               data-ai-hint="students team diverse"
               alt="A diverse group of students collaborating on the SHIFT initiative."
-              width={600}
-              height={400}
+              width={700}
+              height={500}
               className="aspect-video w-full rounded-xl object-cover"
             />
           </div>
