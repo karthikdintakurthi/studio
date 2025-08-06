@@ -49,7 +49,7 @@ export default function AboutPage() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="https://storage.googleapis.com/stabl-media/SHIFT/shift-team-photo.png"
+              src="https://healthy.ucdavis.edu/sites/g/files/dgvnsk7626/files/styles/sf_landscape_16x9/public/media/images/spa%20water2.png?h=ab949e0b&itok=AsMOYGsa"
               data-ai-hint="students team diverse"
               alt="A diverse group of students collaborating on the SHIFT initiative."
               width={600}
@@ -57,19 +57,6 @@ export default function AboutPage() {
               className="aspect-video w-full rounded-xl object-cover"
             />
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container mx-auto px-4 md:px-6">
-          <Image
-            src="https://healthy.ucdavis.edu/sites/g/files/dgvnsk7626/files/styles/sf_landscape_16x9/public/media/images/spa%20water2.png?h=ab949e0b&itok=AsMOYGsa"
-            data-ai-hint="healthy infused water"
-            alt="Refreshing spa water with citrus and herbs."
-            width={1200}
-            height={675}
-            className="w-full rounded-xl object-cover"
-          />
         </div>
       </section>
 
