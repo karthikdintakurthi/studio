@@ -68,28 +68,26 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="bg-primary/5">
-        <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:px-6">
-          <div className="space-y-6 text-center md:text-left">
+      <section className="relative h-[60vh] w-full">
+        <Image
+          src="https://firebasestorage.googleapis.com/v0/b/shift-qj44z.firebasestorage.app/o/banner.jpg?alt=media&token=f08481d8-9571-4677-9a4a-2c565e7d37a3"
+          data-ai-hint="students healthy drinks"
+          alt="Students creating impact with the SHIFT initiative by choosing healthy drinks over sugary beverages."
+          layout="fill"
+          objectFit="cover"
+          className="z-0"
+        />
+        <div className="relative z-10 flex h-full items-center justify-center bg-black/50">
+          <div className="container mx-auto px-4 text-center text-white">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               Make the SHIFT.
             </h1>
-            <p className="text-lg text-foreground/80 md:text-xl">
+            <p className="mt-4 text-lg md:text-xl">
               Join the student wellness movement. Discover healthier, delicious drink alternatives that fuel your body and mind.
             </p>
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg" className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="#swap-tool">Find Your Healthy Swap <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
-          </div>
-          <div className="flex items-center justify-center">
-            <Image
-              src="https://firebasestorage.googleapis.com/v0/b/shift-qj44z.firebasestorage.app/o/banner.jpg?alt=media&token=f08481d8-9571-4677-9a4a-2c565e7d37a3"
-              data-ai-hint="students healthy drinks"
-              alt="Students creating impact with the SHIFT initiative by choosing healthy drinks over sugary beverages."
-              width={600}
-              height={600}
-              className="aspect-square w-full max-w-md rounded-xl object-cover"
-            />
           </div>
         </div>
       </section>
