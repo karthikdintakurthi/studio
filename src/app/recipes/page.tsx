@@ -53,7 +53,7 @@ const recipes = [
   {
     title: "Spicy Ginger Elixir",
     description: "A zesty and invigorating shot to boost your digestion and immunity.",
-    image: "https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fspicy-ginger-elixir.png?alt=media&token=e8a1a3e5-5b3a-4a5e-8b1e-6e8a1a3e5e2b",
+    image: "https://immune-schein.com/cdn/shop/files/case-mix-match-ginger-elixir-12-x-85-oz-bottles-get-5-off-at-checkout-ginger-elixir-immuneschein-ginger-elixirs-259570.jpg?v=1728500559",
     aiHint: "ginger lemon shot",
     tags: ["Immunity", "Spicy"],
   },

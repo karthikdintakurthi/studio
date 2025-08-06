@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.rachelcooks.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'immune-schein.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
