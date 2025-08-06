@@ -70,6 +70,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'healthy.ucdavis.edu',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   async headers() {
