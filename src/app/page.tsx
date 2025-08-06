@@ -68,7 +68,7 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] w-full">
+      <section className="relative h-[60vh] w-full mt-[150px]">
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/shift-qj44z.firebasestorage.app/o/banner.jpg?alt=media&token=f08481d8-9571-4677-9a4a-2c565e7d37a3"
           data-ai-hint="students healthy drinks"
