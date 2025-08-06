@@ -85,14 +85,12 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  devIndicators: {
-    buildActivity: false,
-  },
   experimental: {
-    allowedDevOrigins: [
-      'https://6000-firebase-studio-1754170879791.cluster-f4iwdviaqvc2ct6pgytzw4xqy4.cloudworkstations.dev',
-    ],
+    // Other experimental features can be added here.
   },
+  allowedDevOrigins: [
+    'https://6000-firebase-studio-1754170879791.cluster-f4iwdviaqvc2ct6pgytzw4xqy4.cloudworkstations.dev',
+  ],
 };
 
 export default nextConfig;
