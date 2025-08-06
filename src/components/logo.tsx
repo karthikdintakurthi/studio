@@ -8,8 +8,8 @@ export function Logo({ className }: { className?: string }) {
       <Image
         src="https://firebasestorage.googleapis.com/v0/b/shift-qj44z.firebasestorage.app/o/shift_logo.png?alt=media&token=a3a6904c-8fd2-4d7d-b80c-1ce92fac3328"
         alt="SHIFT Logo"
-        width={150}
-        height={50}
+        width={120}
+        height={40}
         priority
       />
     </Link>
