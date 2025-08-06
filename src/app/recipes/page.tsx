@@ -46,7 +46,7 @@ const recipes = [
   {
     title: "Sparkling Berry Splash",
     description: "A bubbly and antioxidant-rich alternative to soda.",
-    image: "https://www.rachelcooks.com/wp-content/uploads/2020/06/Sparkling-Berry-Pink-Lemonade-118.jpg",
+    image: "https://www.rachelcooks.com/wp-content/uploads/2020/06/Sparkling-Berry-Pink-Lemonade-118-735x1103.jpg",
     aiHint: "berry soda water",
     tags: ["Bubbly", "Low Sugar", "Fruity"],
   },
@@ -67,7 +67,7 @@ const recipes = [
   {
     title: "Hibiscus Iced Tea",
     description: "A tangy and vitamin C-packed iced tea that's naturally sweet.",
-    image: "https://firebasestorage.googleapis.com/v0/b/stabl-media/o/team-images%2Fhibiscus-iced-tea.png?alt=media&token=a1a3e5b3-5b3a-4a5e-8b1e-6e8a1a3e5e2b",
+    image: "https://rachelcooksthai.com/wp-content/uploads/2012/10/Hibiscus-Juice-4.jpg",
     aiHint: "hibiscus tea",
     tags: ["Fruity", "Caffeine-Free", "Refreshing"],
   },

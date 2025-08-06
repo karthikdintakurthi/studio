@@ -57,6 +57,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.ohhowcivilized.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'rachelcooksthai.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
