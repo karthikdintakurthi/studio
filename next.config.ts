@@ -39,6 +39,12 @@ const nextConfig: NextConfig = {
         hostname: 'realandvibrant.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.rachelcooks.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
