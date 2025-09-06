@@ -21,8 +21,10 @@ import { UserPlus } from "lucide-react"
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
-  email: z.string().email("Please enter a valid email address."),
-  reasonToJoin: z.string().min(10, "Please tell us a bit more about why you want to join (at least 10 characters)."),
+  schoolEmail: z.string().email("Please enter a valid school email address."),
+  personalEmail: z.string().email("Please enter a valid personal email address.").optional().or(z.literal("")),
+  schoolId: z.string().optional(),
+  reasonToJoin: z.string().optional(),
 })
 
 export default function ContactForm() {
@@ -30,7 +32,9 @@ export default function ContactForm() {
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
-      email: "",
+      schoolEmail: "",
+      personalEmail: "",
+      schoolId: "",
       reasonToJoin: "",
     },
   })
@@ -56,23 +60,23 @@ export default function ContactForm() {
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Full Name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="e.g., Jane Doe" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
                 <FormField
                   control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Full Name</FormLabel>
-                      <FormControl>
-                        <Input placeholder="e.g., Jane Doe" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
+                  name="schoolEmail"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>School Email</FormLabel>
@@ -83,13 +87,39 @@ export default function ContactForm() {
                     </FormItem>
                   )}
                 />
+                 <FormField
+                  control={form.control}
+                  name="personalEmail"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Personal Email (Optional)</FormLabel>
+                      <FormControl>
+                        <Input placeholder="e.g., jane.doe@example.com" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
               </div>
+               <FormField
+                  control={form.control}
+                  name="schoolId"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>School ID (Optional)</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Enter your student ID" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
               <FormField
                 control={form.control}
                 name="reasonToJoin"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Why do you want to join SHIFT?</FormLabel>
+                    <FormLabel>Why do you want to join SHIFT? (Optional)</FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder="Tell us what inspired you to join the wellness movement..."
