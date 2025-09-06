@@ -81,7 +81,7 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel>School Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="e.g., jane.d@student.mcpsmd.net" {...field} />
+                        <Input placeholder="e.g., 123456@mcpsmd.net" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
