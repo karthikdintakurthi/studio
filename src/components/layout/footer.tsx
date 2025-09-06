@@ -25,8 +25,8 @@ export function AppFooter() {
               <Link href="/events" className="text-sm text-foreground/80 hover:underline underline-offset-4">
                 Events
               </Link>
-               <Link href="/contact" className="text-sm text-foreground/80 hover:underline underline-offset-4">
-                Contact
+               <Link href="/join" className="text-sm text-foreground/80 hover:underline underline-offset-4">
+                Join SHIFT
               </Link>
             </nav>
         </div>

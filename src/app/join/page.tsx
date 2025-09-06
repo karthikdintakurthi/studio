@@ -1,6 +1,6 @@
 import ContactForm from "@/components/contact-form";
 
-export default function ContactPage() {
+export default function JoinPage() {
   return (
     <>
       <section className="bg-primary/5">

@@ -16,7 +16,7 @@ const navLinks = [
   { href: "/stories", label: "Stories" },
   { href: "/recipes", label: "Recipes" },
   { href: "/events", label: "Events" },
-  { href: "/contact", label: "Contact" },
+  { href: "/join", label: "Join SHIFT" },
 ]
 
 export function AppHeader() {
