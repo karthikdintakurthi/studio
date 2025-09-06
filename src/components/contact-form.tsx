@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -18,13 +17,12 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/hooks/use-toast"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Mail, Phone } from "lucide-react"
+import { UserPlus } from "lucide-react"
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
   email: z.string().email("Please enter a valid email address."),
-  phone: z.string().optional(),
-  message: z.string().min(10, "Message must be at least 10 characters."),
+  reasonToJoin: z.string().min(10, "Please tell us a bit more about why you want to join (at least 10 characters)."),
 })
 
 export default function ContactForm() {
@@ -33,16 +31,15 @@ export default function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
-      phone: "",
-      message: "",
+      reasonToJoin: "",
     },
   })
 
   function onSubmit(data: z.infer<typeof contactFormSchema>) {
     console.log(data);
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you soon.",
+      title: "Application Received!",
+      description: "Thank you for your interest in SHIFT. We'll be in touch soon!",
     })
     form.reset()
   }
@@ -51,9 +48,9 @@ export default function ContactForm() {
     <div className="mx-auto max-w-2xl">
       <Card>
         <CardHeader>
-          <CardTitle className="font-headline text-3xl">Get In Touch</CardTitle>
+          <CardTitle className="font-headline text-3xl">Become a Member</CardTitle>
           <CardDescription>
-            Have a question or want to get involved? Send us a message! You can also email us directly at <a href="mailto:nextgenthemindfulsips@gmail.com" className="text-primary underline">nextgenthemindfulsips@gmail.com</a>.
+            Fill out your details below to apply to join the SHIFT chapter at Clarksburg High School.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -65,7 +62,7 @@ export default function ContactForm() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Your Name</FormLabel>
+                      <FormLabel>Full Name</FormLabel>
                       <FormControl>
                         <Input placeholder="e.g., Jane Doe" {...field} />
                       </FormControl>
@@ -78,37 +75,24 @@ export default function ContactForm() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Your Email</FormLabel>
+                      <FormLabel>School Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="e.g., jane.doe@example.com" {...field} />
+                        <Input placeholder="e.g., jane.d@student.mcpsmd.net" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
               </div>
-               <FormField
-                  control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Phone Number (Optional)</FormLabel>
-                      <FormControl>
-                        <Input placeholder="e.g., (123) 456-7890" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
               <FormField
                 control={form.control}
-                name="message"
+                name="reasonToJoin"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Your Message</FormLabel>
+                    <FormLabel>Why do you want to join SHIFT?</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Tell us how we can help..."
+                        placeholder="Tell us what inspired you to join the wellness movement..."
                         className="resize-y"
                         rows={5}
                         {...field}
@@ -119,8 +103,8 @@ export default function ContactForm() {
                 )}
               />
               <Button type="submit">
-                <Mail className="mr-2 h-4 w-4" />
-                Send Message
+                <UserPlus className="mr-2 h-4 w-4" />
+                Submit Application
               </Button>
             </form>
           </Form>
