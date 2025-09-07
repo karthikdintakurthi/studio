@@ -44,7 +44,7 @@ export function AppFooter() {
             <h4 className="font-headline text-lg font-semibold">Contact Us</h4>
             <div className="flex items-center gap-2 text-sm text-foreground/80">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:nextgenthemindfulsips@gmail.com" className="hover:underline">nextgenthemindfulsips@gmail.com</a>
+                <a href="mailto:shiftchoices@gmail.com" className="hover:underline">shiftchoices@gmail.com</a>
             </div>
             <div className="flex items-center gap-2 text-sm text-foreground/80">
                 <Phone className="h-4 w-4" />
