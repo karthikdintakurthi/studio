@@ -76,9 +76,14 @@ export default function Home() {
           <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground/80 md:text-xl">
             Join the student wellness movement. Discover healthier, delicious drink alternatives that fuel your body and mind.
           </p>
-          <Button asChild size="lg" className="mt-6">
-            <Link href="#swap-tool">Find Your Healthy Swap <ArrowRight className="ml-2 h-5 w-5" /></Link>
-          </Button>
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Button asChild size="lg">
+              <Link href="#swap-tool">Find Your Healthy Swap <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/join#application-form">Join SHIFT Club</Link>
+            </Button>
+          </div>
         </div>
       </section>
 

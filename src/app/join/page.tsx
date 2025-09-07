@@ -13,7 +13,7 @@ export default function JoinPage() {
         </div>
       </section>
 
-      <section>
+      <section id="application-form">
         <div className="container mx-auto px-4 md:px-6">
            <ContactForm />
         </div>
