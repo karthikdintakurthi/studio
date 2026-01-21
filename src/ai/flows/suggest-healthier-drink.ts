@@ -44,19 +44,21 @@ export async function suggestHealthierDrink(
   return suggestHealthierDrinkFlow(input);
 }
 
-const recipeBookTool = ai.defineTool({
-  name: 'getRecipeFromRecipeBook',
-  description: 'Retrieves a drink recipe from the recipe book based on the specified criteria.',
-  inputSchema: z.object({
-    flavors: z
-      .string()
-      .describe('The flavors that the desired recipe should have.'),
-    sugarContent: z
-      .string()
-      .describe('The sugar content that the desired recipe should have.'),
-  }),
-  outputSchema: z.string().optional().describe('A recipe from the recipe book.'),
-  async fn(input) {
+const recipeBookTool = ai.defineTool(
+  {
+    name: 'getRecipeFromRecipeBook',
+    description: 'Retrieves a drink recipe from the recipe book based on the specified criteria.',
+    inputSchema: z.object({
+      flavors: z
+        .string()
+        .describe('The flavors that the desired recipe should have.'),
+      sugarContent: z
+        .string()
+        .describe('The sugar content that the desired recipe should have.'),
+    }),
+    outputSchema: z.string().optional().describe('A recipe from the recipe book.'),
+  },
+  async (input: {flavors: string; sugarContent: string}) => {
     // TODO: Implement the logic to retrieve a recipe from the recipe book.
     // This is a placeholder; replace it with actual data retrieval.
     console.log('Tool was called with', input);
@@ -64,8 +66,8 @@ const recipeBookTool = ai.defineTool({
         return `Sparkling Berry Splash: \nIngredients: 1/2 cup mixed berries, 1 can of sparkling water, 1 tsp maple syrup (optional). \nInstructions: Muddle berries, top with sparkling water, and stir.`
     }
     return undefined; /* Example:  `Ingredients: ... Instructions: ...` */
-  },
-});
+  }
+);
 
 const prompt = ai.definePrompt({
   name: 'suggestHealthierDrinkPrompt',
